@@ -1,7 +1,29 @@
 aid: dada
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dada.png
 name: Dada
-description: 'Dada is a company surfaced as a portfolio company of hongshan and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Dada Group (Dada Nexus, NASDAQ: DADA) is a leading Chinese instant retail and
+  local on-demand delivery platform, headquartered in Shanghai and founded in 2014.
+  It operates an open, crowdsourced delivery network of more than one million rider
+  partners serving supermarkets, pharmacies, fresh-food and restaurant merchants
+  across thousands of counties and cities, alongside merchant fulfillment products
+  such as the Haibo in-store logistics system and the Dada Youjian picking service.
+  Now integrated into the JD.com ecosystem, its core delivery brand was rebranded
+  to JD Instant Delivery (京东秒送) in May 2024. Dada runs a merchant Open Platform
+  (开放平台) for order, delivery-tracking and fulfillment integrations. This profile
+  was surfaced as a portfolio company of Hongshan and enriched by the API Evangelist
+  pipeline.
 url: https://raw.githubusercontent.com/api-evangelist/dada/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +33,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Delivery
+- Logistics
+- Instant Retail
+- Last-Mile Delivery
+- On-Demand
+- Local Commerce
+- China
+- JD
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +52,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/dada-domain-security.yml
 - type: Website
   url: https://imdada.cn
+- type: DeveloperPortal
+  url: https://newopen.imdada.cn
+- type: About
+  url: https://about.imdada.cn/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
